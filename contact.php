@@ -4,7 +4,7 @@
 <div class="py-4" style="background-color: var(--color-primary); color: white; text-align: center;">
     <div class="container">
         <h1 style="color: white; margin-bottom: 1rem;">Hubungi Kami</h1>
-        <p style="color: #cbd5e1; font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Kami siap berkolaborasi dan mendengarkan aspirasi Anda demi mewujudkan program kemanusiaan yang berdampak.</p>
+        <p style="color: #cbd5e1; font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Kami siap membantu Anda terkait informasi jurnal, proses submission, dan kolaborasi akademik.</p>
     </div>
 </div>
 
@@ -14,7 +14,7 @@
             <!-- Informasi Kontak -->
             <div>
                 <h2 class="text-primary mb-3">Informasi Kontak</h2>
-                <p class="mb-4" style="color: var(--color-text-light); font-size: 1.125rem;">Jangan ragu untuk menghubungi kami melalui saluran resmi berikut terkait program donasi, kemitraan, atau publikasi jurnal.</p>
+                <p class="mb-4" style="color: var(--color-text-light); font-size: 1.125rem;">Jangan ragu untuk menghubungi kami melalui saluran resmi berikut terkait informasi jurnal, proses submission, atau kerja sama akademik.</p>
                 
                 <div style="display: flex; flex-direction: column; gap: 1.5rem;">
                     <div style="display: flex; gap: 1rem; align-items: flex-start;">
@@ -22,7 +22,7 @@
                             <i class="ph ph-map-pin"></i>
                         </div>
                         <div>
-                            <h3 style="font-size: 1.125rem; margin-bottom: 0.25rem;">Kantor Pusat</h3>
+                            <h3 style="font-size: 1.125rem; margin-bottom: 0.25rem;">Kantor Redaksi</h3>
                             <p style="color: var(--color-text-main);">Kota Pematangsiantar,<br>Sumatera Utara, Indonesia</p>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div>
                             <h3 style="font-size: 1.125rem; margin-bottom: 0.25rem;">Telepon / WhatsApp</h3>
-                            <p style="color: var(--color-text-main);">+62 812-3456-7890</p>
+                            <p style="color: var(--color-text-main);">+62 813-8548-8531</p>
                         </div>
                     </div>
                     
@@ -43,7 +43,7 @@
                         </div>
                         <div>
                             <h3 style="font-size: 1.125rem; margin-bottom: 0.25rem;">Email</h3>
-                            <p style="color: var(--color-text-main);">info@bumiinovasimuda.or.id</p>
+                            <p style="color: var(--color-text-main);">info@langitpublishing.org</p>
                         </div>
                     </div>
                 </div>
@@ -81,9 +81,10 @@
                             <label for="subject" class="form-label">Subjek</label>
                             <select id="subject" name="subject" class="form-control" required>
                                 <option value="" disabled selected>Pilih subjek pesan...</option>
-                                <option value="Kemitraan & Donasi">Kemitraan & Donasi</option>
-                                <option value="Informasi Jurnal (Langit Publishing)">Informasi Jurnal (Langit Publishing)</option>
-                                <option value="Program Makan Bergizi Gratis">Program Makan Bergizi Gratis</option>
+                                <option value="Informasi Submission">Informasi Submission Artikel</option>
+                                <option value="Pertanyaan Reviewer">Pertanyaan Reviewer</option>
+                                <option value="Kerja Sama Akademik">Kerja Sama Akademik</option>
+                                <option value="Bergabung sebagai Reviewer">Bergabung sebagai Reviewer</option>
                                 <option value="Lainnya">Lainnya</option>
                             </select>
                         </div>

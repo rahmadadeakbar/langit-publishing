@@ -4,7 +4,7 @@
 <div class="py-4" style="background-color: var(--color-primary); color: white; text-align: center;">
     <div class="container">
         <h1 style="color: white; margin-bottom: 1rem;">Langit Publishing</h1>
-        <p style="color: #cbd5e1; font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Divisi penerbitan ilmiah Yayasan Bumi Inovasi Muda yang mengelola berbagai jurnal keilmuan bereputasi.</p>
+        <p style="color: #cbd5e1; font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Penerbit jurnal ilmiah open access yang mengelola berbagai jurnal keilmuan bereputasi.</p>
     </div>
 </div>
 
@@ -14,7 +14,7 @@
         <div style="max-width: 800px; margin: 0 auto;">
             <i class="ph ph-books" style="font-size: 3rem; color: var(--color-secondary); margin-bottom: 1rem;"></i>
             <h2 class="text-primary mb-3">Portal Jurnal Terbuka (OJS)</h2>
-            <p style="font-size: 1.125rem; color: var(--color-text-main); margin-bottom: 2rem;">Langit Publishing mengelola enam jurnal ilmiah Open Access menggunakan standar Open Journal Systems (OJS). Kami berkomitmen untuk menyebarluaskan hasil riset multidisiplin dari para akademisi, peneliti, dan praktisi baik secara nasional maupun internasional.</p>
+            <p style="font-size: 1.125rem; color: var(--color-text-main); margin-bottom: 2rem;">Langit Publishing mengelola enam jurnal ilmiah Open Access menggunakan standar Open Journal Systems (OJS). Kami berkomitmen menyebarluaskan hasil riset multidisiplin dari para akademisi, peneliti, dan praktisi baik secara nasional maupun internasional.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <span style="background-color: var(--color-bg-light); padding: 0.5rem 1rem; border-radius: var(--radius-md); border: 1px solid #e2e8f0; font-weight: 500; font-size: 0.875rem;"><i class="ph ph-check-circle text-secondary"></i> Peer-Reviewed</span>
                 <span style="background-color: var(--color-bg-light); padding: 0.5rem 1rem; border-radius: var(--radius-md); border: 1px solid #e2e8f0; font-weight: 500; font-size: 0.875rem;"><i class="ph ph-check-circle text-secondary"></i> Open Access</span>
@@ -72,7 +72,7 @@
                     <h3 style="margin: 0; font-size: 1.5rem; color: #4c1d95;">ECONVERGIA</h3>
                     <span style="background-color: #ede9fe; color: #4c1d95; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.5rem; border-radius: 4px;">Ekonomi</span>
                 </div>
-                <h4 style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1rem; min-height: 2.5rem;">Journal of Economics, Business and Management</h3>
+                <h4 style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1rem; min-height: 2.5rem;">Journal of Economics, Business and Management</h4>
                 <p class="card-body">Berfokus pada isu-isu ekonomi terapan, manajemen bisnis, akuntansi, ekonomi syariah, dan kewirausahaan.</p>
                 <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
             </div>

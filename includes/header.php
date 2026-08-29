@@ -10,11 +10,11 @@ function is_active($page) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yayasan Bumi Inovasi Muda & Langit Publishing</title>
+    <title>Langit Publishing — Open Access Journal Publisher</title>
     
     <!-- Meta Tags for SEO -->
-    <meta name="description" content="Yayasan Bumi Inovasi Muda - Lembaga pengabdian masyarakat di bidang keagamaan, sosial, dan kemanusiaan, serta penerbit jurnal ilmiah Langit Publishing.">
-    <meta name="keywords" content="Yayasan Bumi Inovasi Muda, Langit Publishing, Jurnal Ilmiah, Pengabdian Masyarakat, Makan Bergizi Gratis">
+    <meta name="description" content="Langit Publishing — Penerbit jurnal ilmiah open access yang mengelola publikasi multidisiplin bereputasi dengan standar peer-review internasional.">
+    <meta name="keywords" content="Langit Publishing, Jurnal Ilmiah, Open Access, Peer Review, Publikasi Akademik, OJS, EDUSKY, JCPI, ECONVERGIA, METLA, REPUBLICA">
     
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +32,10 @@ function is_active($page) {
 <nav class="navbar">
     <div class="container">
         <a href="index.php" class="navbar-brand">
-            <i class="ph ph-planet"></i>
-            <span>Bumi Inovasi Muda</span>
+            <div style="width: 42px; height: 42px; border-radius: 50%; background-color: white; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex-shrink: 0;">
+                <img src="assets/images/logo-langit.jpeg" alt="Langit Publishing Logo" style="width: 36px; height: 36px; object-fit: contain;">
+            </div>
+            <span>Langit Publishing</span>
         </a>
         
         <button class="mobile-menu-btn" aria-label="Toggle Menu">
@@ -43,8 +45,8 @@ function is_active($page) {
         <ul class="navbar-nav">
             <li><a href="index.php" class="nav-link <?= is_active('index.php') ?>">Beranda</a></li>
             <li><a href="about.php" class="nav-link <?= is_active('about.php') ?>">Tentang Kami</a></li>
-            <li><a href="programs.php" class="nav-link <?= is_active('programs.php') ?>">Program Kerja</a></li>
-            <li><a href="journals.php" class="nav-link <?= is_active('journals.php') ?>">Publikasi Ilmiah</a></li>
+            <li><a href="journals.php" class="nav-link <?= is_active('journals.php') ?>">Jurnal</a></li>
+            <li><a href="programs.php" class="nav-link <?= is_active('programs.php') ?>">Tim Editorial</a></li>
             <li><a href="contact.php" class="nav-link <?= is_active('contact.php') ?>">Kontak</a></li>
         </ul>
     </div>

@@ -3,9 +3,12 @@
         <div class="footer-grid">
             <div class="footer-col">
                 <h3 style="display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph ph-planet"></i> Bumi Inovasi Muda
+                    <div style="width: 36px; height: 36px; border-radius: 50%; background-color: white; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                        <img src="assets/images/logo-langit.jpeg" alt="Logo" style="width: 30px; height: 30px; object-fit: contain;">
+                    </div>
+                    Langit Publishing
                 </h3>
-                <p>Yayasan yang bergerak di bidang keagamaan, sosial, dan kemanusiaan untuk mewujudkan masyarakat yang sejahtera, berilmu, dan berakhlak mulia.</p>
+                <p>Penerbit jurnal ilmiah open access yang mengelola publikasi multidisiplin bereputasi dengan standar peer-review internasional.</p>
                 <div class="footer-social">
                     <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
                     <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
@@ -17,8 +20,8 @@
                 <h3>Tautan Cepat</h3>
                 <ul class="footer-links">
                     <li><a href="about.php">Tentang Kami</a></li>
-                    <li><a href="programs.php">Program Kerja</a></li>
-                    <li><a href="journals.php">Publikasi Ilmiah</a></li>
+                    <li><a href="journals.php">Jurnal Ilmiah</a></li>
+                    <li><a href="programs.php">Tim Editorial</a></li>
                     <li><a href="contact.php">Hubungi Kami</a></li>
                 </ul>
             </div>
@@ -27,10 +30,10 @@
                 <h3>Hubungi Kami</h3>
                 <ul class="footer-links">
                     <li style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="ph ph-envelope-simple"></i> info@bumiinovasimuda.or.id
+                        <i class="ph ph-envelope-simple"></i> info@langitpublishing.org
                     </li>
                     <li style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="ph ph-phone"></i> +62 812-3456-7890
+                        <i class="ph ph-phone"></i> +62 813-8548-8531
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
                         <i class="ph ph-map-pin" style="margin-top: 0.25rem;"></i>
@@ -40,14 +43,14 @@
             </div>
             
             <div class="footer-col">
-                <h3>Langit Publishing</h3>
-                <p>Divisi penerbitan jurnal ilmiah resmi Yayasan Bumi Inovasi Muda, mengelola publikasi multidisiplin.</p>
+                <h3>Katalog Jurnal</h3>
+                <p>Kami mengelola enam jurnal ilmiah open access multidisiplin menggunakan standar Open Journal Systems (OJS).</p>
                 <a href="journals.php" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.3); margin-top: 1rem;">Lihat Jurnal <i class="ph ph-arrow-right"></i></a>
             </div>
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; <?= date('Y') ?> Yayasan Bumi Inovasi Muda. All rights reserved.</p>
+            <p>&copy; <?= date('Y') ?> Langit Publishing. All rights reserved.</p>
         </div>
     </div>
 </footer>
