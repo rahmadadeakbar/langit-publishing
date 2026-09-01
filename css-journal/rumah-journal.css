@@ -1,0 +1,677 @@
+/* 
+ * Langit Publishing - Custom OJS 3.5 Theme (Rev 3)
+ * Properly overrides default OJS theme selectors
+ * Target: Site-level homepage (journal listing)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --lp-primary: #0c3b6d;
+  --lp-secondary: #176ccb;
+  --lp-bg: #f4f7fb;
+  --lp-card-bg: #ffffff;
+  --lp-text: #1e293b;
+  --lp-text-light: #64748b;
+  --lp-radius: 14px;
+  --lp-radius-sm: 8px;
+  --lp-shadow: 0 2px 12px rgba(12, 59, 109, 0.06);
+  --lp-shadow-hover: 0 12px 32px rgba(12, 59, 109, 0.12);
+  --lp-transition: all 0.3s ease;
+}
+
+/* =========================================
+   0. BASE RESETS
+   ========================================= */
+body.pkp_page_index.pkp_op_index {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  background-color: var(--lp-bg) !important;
+  color: var(--lp-text) !important;
+  line-height: 1.6 !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* =========================================
+   1. HEADER & NAVIGATION
+   ========================================= */
+body.pkp_page_index .pkp_structure_head {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+}
+
+/* Reset OJS .has_site_logo width constraints */
+body.has_site_logo .pkp_head_wrapper,
+body.pkp_page_index .pkp_head_wrapper {
+  max-width: 1280px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0.75rem 2rem !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  position: relative !important;
+  /* Reset OJS default padding-top on desktop */
+  padding-top: 0.75rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Clear the clearfix floats from OJS */
+body.pkp_page_index .pkp_head_wrapper::before,
+body.pkp_page_index .pkp_head_wrapper::after {
+  display: none !important;
+}
+
+/* --- Site Name / Logo --- */
+body.pkp_page_index .pkp_site_name_wrapper {
+  position: relative !important;
+  float: none !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+}
+
+body.pkp_page_index .pkp_site_name {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  width: auto !important;
+  font-size: inherit !important;
+}
+
+body.pkp_page_index .pkp_site_name .is_img {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.pkp_page_index .pkp_site_name .is_img img {
+  display: block !important;
+  max-height: 70px !important;
+  width: auto !important;
+  height: auto !important;
+  transition: transform 0.3s ease !important;
+}
+
+body.pkp_page_index .pkp_site_name .is_img:hover img {
+  transform: scale(1.02) !important;
+}
+
+/* --- Hide mobile hamburger on desktop --- */
+body.pkp_page_index .pkp_site_nav_toggle {
+  display: none !important;
+}
+
+/* --- Navigation Menu Container --- */
+body.pkp_page_index .pkp_site_nav_menu {
+  display: flex !important;
+  align-items: center !important;
+  position: static !important;
+  background: transparent !important;
+  padding: 0 !important;
+  width: auto !important;
+  z-index: auto !important;
+  gap: 1rem !important;
+}
+
+/* --- User Navigation Wrapper (Register/Login) --- */
+body.pkp_page_index .pkp_navigation_user_wrapper {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+  padding: 0 !important;
+  margin: 0 0 0 auto !important; /* Dorong ke ujung kanan */
+  text-align: right !important;
+  z-index: auto !important;
+  float: none !important;
+  width: auto !important;
+}
+
+body.pkp_page_index .pkp_navigation_user_wrapper .pkp_navigation_user.pkp_navigation_user {
+  display: flex !important;
+  gap: 67.75rem !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  text-align: right !important;
+  font-size: 0.9rem !important;
+}
+
+body.pkp_page_index .pkp_navigation_user_wrapper .pkp_navigation_user li.profile {
+  float: none !important;
+  display: inline-flex !important;
+}
+
+body.pkp_page_index .pkp_navigation_user_wrapper .pkp_navigation_user li.profile a {
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  padding: 0.5rem 1.4rem !important;
+  border-radius: 30px !important;
+  transition: var(--lp-transition) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1.4 !important;
+  white-space: nowrap !important;
+}
+
+/* Register button = outline */
+body.pkp_page_index .pkp_navigation_user li.profile:first-child a {
+  color: var(--lp-secondary) !important;
+  background-color: transparent !important;
+  border: 2px solid var(--lp-secondary) !important;
+}
+
+body.pkp_page_index .pkp_navigation_user li.profile:first-child a:hover,
+body.pkp_page_index .pkp_navigation_user li.profile:first-child a:focus {
+  background-color: var(--lp-secondary) !important;
+  color: #fff !important;
+}
+
+/* Login button = solid */
+body.pkp_page_index .pkp_navigation_user li.profile:nth-child(2) a {
+  color: #fff !important;
+  background-color: var(--lp-primary) !important;
+  border: 2px solid var(--lp-primary) !important;
+}
+
+body.pkp_page_index .pkp_navigation_user li.profile:nth-child(2) a:hover,
+body.pkp_page_index .pkp_navigation_user li.profile:nth-child(2) a:focus {
+  background-color: var(--lp-secondary) !important;
+  border-color: var(--lp-secondary) !important;
+}
+
+/* =========================================
+   2. MAIN CONTENT AREA
+   ========================================= */
+body.pkp_page_index .pkp_structure_content {
+  padding-top: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+body.pkp_page_index .pkp_structure_main {
+  max-width: 1280px !important;
+  width: 100% !important;
+  margin: 2.5rem auto !important;
+  padding: 0 2rem !important;
+  float: none !important;
+  position: relative !important;
+}
+
+/* Hide OJS default decorative borders */
+body.pkp_page_index .pkp_structure_main::before,
+body.pkp_page_index .pkp_structure_main::after {
+  display: none !important;
+}
+
+/* =========================================
+   3. JOURNALS SECTION
+   ========================================= */
+
+/* "Journals" heading - show it nicely instead of screen-reader only */
+body.pkp_page_index .journals > h2 {
+  clip: auto !important;
+  position: relative !important;
+  left: auto !important;
+  font-size: 2rem !important;
+  color: var(--lp-primary) !important;
+  font-weight: 800 !important;
+  margin-bottom: 2.5rem !important;
+  text-align: center !important;
+  letter-spacing: -0.02em !important;
+  padding-bottom: 1rem !important;
+}
+
+body.pkp_page_index .journals > h2::after {
+  content: '' !important;
+  display: block !important;
+  width: 60px !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, var(--lp-primary), var(--lp-secondary)) !important;
+  margin: 0.75rem auto 0 !important;
+  border-radius: 4px !important;
+}
+
+/* Journal list = CSS Grid */
+body.pkp_page_index .journals > ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)) !important;
+  gap: 2rem !important;
+  align-items: stretch !important;
+}
+
+/* =========================================
+   4. JOURNAL CARD ITEMS
+   ========================================= */
+body.pkp_page_index .journals > ul > li {
+  background: var(--lp-card-bg) !important;
+  border-radius: var(--lp-radius) !important;
+  box-shadow: var(--lp-shadow) !important;
+  transition: var(--lp-transition) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  border: 1px solid #e2e8f0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+  position: relative !important;
+}
+
+/* Clear the OJS clearfix on li */
+body.pkp_page_index .journals > ul > li::before {
+  content: '' !important;
+  display: block !important;
+  width: 100% !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, var(--lp-primary), var(--lp-secondary)) !important;
+  position: static !important;
+  flex-shrink: 0 !important;
+}
+
+body.pkp_page_index .journals > ul > li::after {
+  display: none !important;
+}
+
+body.pkp_page_index .journals > ul > li:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: var(--lp-shadow-hover) !important;
+}
+
+/* --- Thumbnail Area --- */
+body.pkp_page_index .journals .thumb {
+  float: none !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 220px !important;
+  background-color: #f8fafc !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1.5rem 2rem !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  overflow: hidden !important;
+}
+
+body.pkp_page_index .journals .thumb + .body {
+  float: none !important;
+  width: 100% !important;
+}
+
+body.pkp_page_index .journals .thumb img {
+  display: block !important;
+  width: auto !important;
+  max-width: 200px !important;
+  max-height: 220px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  transition: transform 0.4s ease !important;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08)) !important;
+}
+
+body.pkp_page_index .journals > ul > li:hover .thumb img {
+  transform: scale(1.05) !important;
+}
+
+/* --- Card Body --- */
+body.pkp_page_index .journals .body {
+  padding: 1.5rem 1.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+/* Journal Title */
+body.pkp_page_index .journals h3 {
+  margin: 0 0 0.75rem 0 !important;
+  font-size: 1.1rem !important;
+  line-height: 1.45 !important;
+  font-weight: 700 !important;
+}
+
+body.pkp_page_index .journals h3 a {
+  color: var(--lp-primary) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+body.pkp_page_index .journals h3 a:hover {
+  color: var(--lp-secondary) !important;
+}
+
+/* Description */
+body.pkp_page_index .journals .description {
+  color: var(--lp-text-light) !important;
+  font-size: 0.88rem !important;
+  margin-bottom: 1.25rem !important;
+  flex-grow: 1 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  line-height: 1.65 !important;
+}
+
+body.pkp_page_index .journals .description p {
+  margin: 0 !important;
+  line-height: 1.65 !important;
+}
+
+/* =========================================
+   5. CARD BUTTONS (View Journal / Current Issue)
+   ========================================= */
+body.pkp_page_index .journals .links {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 0.75rem !important;
+  margin-top: auto !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+body.pkp_page_index .journals .links li {
+  display: block !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.pkp_page_index .journals .links a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 0.65rem 0.75rem !important;
+  border-radius: var(--lp-radius-sm) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  transition: var(--lp-transition) !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+  line-height: 1.3 !important;
+}
+
+/* View Journal */
+body.pkp_page_index .journals .links .view a {
+  background-color: transparent !important;
+  color: var(--lp-text-light) !important;
+  border: 1.5px solid #cbd5e1 !important;
+}
+
+body.pkp_page_index .journals .links .view a:hover {
+  background-color: #f1f5f9 !important;
+  color: var(--lp-primary) !important;
+  border-color: #94a3b8 !important;
+}
+
+/* Current Issue */
+body.pkp_page_index .journals .links .current a {
+  background-color: var(--lp-secondary) !important;
+  color: #fff !important;
+  border: 1.5px solid var(--lp-secondary) !important;
+}
+
+body.pkp_page_index .journals .links .current a:hover {
+  background-color: var(--lp-primary) !important;
+  border-color: var(--lp-primary) !important;
+}
+
+/* =========================================
+   6. FOOTER
+   ========================================= */
+body.pkp_page_index .pkp_structure_footer_wrapper {
+  background: linear-gradient(135deg, var(--lp-primary) 0%, #082647 100%) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  padding: 3rem 0 2rem !important;
+  margin-top: 4rem !important;
+  border-top: 4px solid var(--lp-secondary) !important;
+}
+
+/* Override OJS fixed-width pada footer (728px / 952px / 1160px) */
+body.pkp_page_index .pkp_structure_footer {
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 2.5rem !important;
+  width: 100% !important;
+  text-align: left !important;
+  box-sizing: border-box !important;
+}
+
+body.pkp_page_index .pkp_footer_content {
+  padding: 0 0 2rem 0 !important;
+  text-align: left !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Override OJS clearfix yang mengganggu flexbox footer */
+body.pkp_page_index .pkp_structure_footer::before,
+body.pkp_page_index .pkp_structure_footer::after,
+body.pkp_page_index .pkp_footer_content::before,
+body.pkp_page_index .pkp_footer_content::after {
+  display: none !important;
+}
+
+/* Footer custom content styling */
+body.pkp_page_index .pkp_footer_content h4 {
+  color: #ffffff !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.25rem !important;
+  padding-bottom: 0.75rem !important;
+  border-bottom: 3px solid var(--lp-secondary) !important;
+  display: inline-block !important;
+}
+
+body.pkp_page_index .pkp_footer_content p {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 0.9rem !important;
+  line-height: 1.7 !important;
+  margin: 0 0 1rem 0 !important;
+}
+
+body.pkp_page_index .pkp_footer_content ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body.pkp_page_index .pkp_footer_content ul li {
+  margin-bottom: 0.6rem !important;
+  padding: 0 !important;
+  line-height: 1.6 !important;
+}
+
+body.pkp_page_index .pkp_footer_content a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease, transform 0.2s ease !important;
+  display: inline-block !important;
+}
+
+body.pkp_page_index .pkp_footer_content a:hover {
+  color: #ffffff !important;
+  transform: translateX(3px) !important;
+}
+
+/* OJS/PKP Brand */
+body.pkp_page_index .pkp_brand_footer {
+  padding: 1.5rem 0 0 0 !important;
+  border-top: 1px solid rgba(255,255,255,0.1) !important;
+  text-align: center !important;
+}
+
+body.pkp_page_index .pkp_brand_footer::before,
+body.pkp_page_index .pkp_brand_footer::after {
+  display: none !important;
+}
+
+body.pkp_page_index .pkp_brand_footer a {
+  float: none !important;
+  display: inline-block !important;
+  opacity: 0.5 !important;
+  transition: var(--lp-transition) !important;
+  filter: grayscale(100%) brightness(200%) !important;
+}
+
+body.pkp_page_index .pkp_brand_footer a:hover {
+  opacity: 1 !important;
+  filter: grayscale(0%) brightness(100%) !important;
+}
+
+/* =========================================
+   7. RESPONSIVE BREAKPOINTS
+   ========================================= */
+
+/* ---- Tablet (max 992px) ---- */
+@media (max-width: 992px) {
+  body.pkp_page_index .journals > ul {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    gap: 1.5rem !important;
+  }
+}
+
+/* ---- Mobile (max 768px) ---- */
+@media (max-width: 768px) {
+
+  /* Header: stack logo on top, nav below */
+  body.has_site_logo .pkp_head_wrapper,
+  body.pkp_page_index .pkp_head_wrapper {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    padding: 0.75rem 1rem !important;
+    align-items: center !important;
+  }
+
+  body.pkp_page_index .pkp_site_name_wrapper {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  body.pkp_page_index .pkp_site_name .is_img img {
+    max-height: 55px !important;
+  }
+
+  /* Nav menu on mobile */
+  body.pkp_page_index .pkp_site_nav_menu {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  body.pkp_page_index .pkp_navigation_user_wrapper {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  body.pkp_page_index .pkp_navigation_user_wrapper .pkp_navigation_user.pkp_navigation_user {
+    justify-content: center !important;
+  }
+
+  /* Main content area */
+  body.pkp_page_index .pkp_structure_main {
+    padding: 0 1rem !important;
+    margin: 1.5rem auto !important;
+  }
+
+  body.pkp_page_index .journals > h2 {
+    font-size: 1.6rem !important;
+    margin-bottom: 1.75rem !important;
+  }
+
+  /* Single column cards on mobile */
+  body.pkp_page_index .journals > ul {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  body.pkp_page_index .journals .thumb {
+    min-height: 180px !important;
+    padding: 1.25rem 1.5rem !important;
+  }
+
+  body.pkp_page_index .journals .thumb img {
+    max-width: 160px !important;
+    max-height: 180px !important;
+  }
+
+  body.pkp_page_index .journals .body {
+    padding: 1.25rem !important;
+  }
+
+  body.pkp_page_index .pkp_structure_footer_wrapper {
+    margin-top: 2.5rem !important;
+  }
+}
+
+/* ---- Small phone (max 480px) ---- */
+@media (max-width: 480px) {
+
+  body.has_site_logo .pkp_head_wrapper,
+  body.pkp_page_index .pkp_head_wrapper {
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  body.pkp_page_index .pkp_site_name .is_img img {
+    max-height: 45px !important;
+  }
+
+  body.pkp_page_index .pkp_navigation_user_wrapper .pkp_navigation_user li.profile a {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 1rem !important;
+  }
+
+  body.pkp_page_index .journals > h2 {
+    font-size: 1.4rem !important;
+  }
+
+  body.pkp_page_index .journals > ul {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.pkp_page_index .journals .thumb {
+    min-height: 150px !important;
+    padding: 1rem !important;
+  }
+
+  body.pkp_page_index .journals .thumb img {
+    max-width: 130px !important;
+    max-height: 160px !important;
+  }
+
+  body.pkp_page_index .journals .body {
+    padding: 1rem !important;
+  }
+
+  body.pkp_page_index .journals h3 {
+    font-size: 1rem !important;
+  }
+
+  body.pkp_page_index .journals .links a {
+    font-size: 0.8rem !important;
+    padding: 0.55rem 0.5rem !important;
+  }
+}
