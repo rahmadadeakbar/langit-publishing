@@ -41,7 +41,7 @@
                 </div>
                 <h4 style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1rem; min-height: 2.5rem;">Journal of Educational Research and Innovation</h4>
                 <p class="card-body">Wadah diseminasi hasil penelitian di bidang ilmu pendidikan secara umum, kurikulum, teknologi pendidikan, serta inovasi pembelajaran di tingkat pendidikan dasar hingga tinggi.</p>
-                <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
+                <a href="https://journal.langitpublishing.org/index.php/edusky" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
             </div>
             
             <!-- JCPI -->
@@ -52,7 +52,7 @@
                 </div>
                 <h4 style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1rem; min-height: 2.5rem;">Journal of Counseling, Psychology, and Intervention</h4>
                 <p class="card-body">Menerbitkan artikel empiris dan teoretis tentang bimbingan konseling, psikologi klinis, psikologi pendidikan, dan berbagai intervensi psikologis.</p>
-                <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
+                <a href="https://journal.langitpublishing.org/index.php/jcpi" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
             </div>
             
             <!-- BUMI PENGABDIAN -->
@@ -63,7 +63,7 @@
                 </div>
                 <h4 style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1rem; min-height: 2.5rem;">Journal of Community Service and Engagement</h4>
                 <p class="card-body">Mempublikasikan laporan dan artikel berbasis kegiatan pengabdian kepada masyarakat, pemberdayaan, dan implementasi riset tepat guna.</p>
-                <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
+                <a href="https://journal.langitpublishing.org/index.php/bumipengabdian" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
             </div>
             
             <!-- ECONVERGIA -->
@@ -74,7 +74,7 @@
                 </div>
                 <h4 style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1rem; min-height: 2.5rem;">Journal of Economics, Business and Management</h4>
                 <p class="card-body">Berfokus pada isu-isu ekonomi terapan, manajemen bisnis, akuntansi, ekonomi syariah, dan kewirausahaan.</p>
-                <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
+                <a href="https://journal.langitpublishing.org/index.php/econvergia" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
             </div>
             
             <!-- METLA -->
@@ -85,7 +85,7 @@
                 </div>
                 <h4 style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1rem; min-height: 2.5rem;">Journal Mathematics Education, Learning, Technology and Assessment</h4>
                 <p class="card-body">Mengkaji pengembangan pengajaran matematika, integrasi teknologi pendidikan, serta sistem asesmen dan evaluasi.</p>
-                <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
+                <a href="https://journal.langitpublishing.org/index.php/metla" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
             </div>
             
             <!-- REPUBLICA -->
@@ -96,7 +96,18 @@
                 </div>
                 <h4 style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1rem; min-height: 2.5rem;">Journal Pancasila and Civics Education</h4>
                 <p class="card-body">Menelaah topik seputar Pendidikan Pancasila dan Kewarganegaraan, hukum tata negara, pendidikan karakter, dan isu kebangsaan.</p>
-                <a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
+                <a href="https://journal.langitpublishing.org/index.php/republica" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
+            </div>
+            
+            <!-- SYNTHEGRIA -->
+            <div class="card" style="border-top: 4px solid #0ea5e9;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                    <h3 style="margin: 0; font-size: 1.5rem; color: #0369a1;">SYNTHEGRIA</h3>
+                    <span style="background-color: #e0f2fe; color: #0369a1; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.5rem; border-radius: 4px;">Multidisciplinary</span>
+                </div>
+                <h4 style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1rem; min-height: 2.5rem;">Journal Multidisciplinary Research</h4>
+                <p class="card-body" style="font-size: 0.9rem;">Synthegria: Journal Multidisciplinary Research is a multidisciplinary academic journal that applies a double-blind peer-review process and provides open access to its published content. The journal is published periodically as a scholarly publication platform that accommodates research findings from a wide range of academic disciplines.</p>
+                <a href="https://journal.langitpublishing.org/index.php/synthegria" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">Kunjungi Jurnal <i class="ph ph-arrow-square-out"></i></a>
             </div>
         </div>
     </div>
